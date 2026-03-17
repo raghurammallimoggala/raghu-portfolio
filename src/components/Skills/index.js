@@ -7,7 +7,7 @@ import "./index.css"
 function Skills(){  
     const skills = [
     { id:1,name: "HTML", imageUrl: "/skills/html.png" },
-    { id:2,name: "CSS", imageUrl: "/skills/CSS.png" },
+    { id:2,name: "CSS", imageUrl: "/skills/css.png" },
     { id:3,name: "Bootstrap", imageUrl: "/skills/bootstrap.png" },
     { id:4,name: "SQL Database", imageUrl: "/skills/sql-database.png" },
     { id:5,name: "JavaScript", imageUrl: "/skills/javascript.png" },
