@@ -1,0 +1,153 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    min-height:100vh;
+    padding:60px 20px 40px 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    background-image: linear-gradient(to left, #220dda, #d684a4);
+}
+
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.skills-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    color:inherit;
+}
+
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap:20px;
+}
+
+
+.skills-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.skills-item.selected{
+    border:2px solid #007bff;
+    box-shadow: 0 8px 25px rgba(0,123,255,0.4);
+}
+
+
+.skills-name {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color:inherit;
+    text-align: center;
+}
+
+
+.skills-image {
+    width: 150px;
+    height: 135px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+.skills.light {
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+}
+
+.skills.dark {
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+.certificates-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px 0;
+    background-color: #000;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .skills-title {
+        font-size: 22px;
+    }
+    .skills-image {
+        width: 130px;
+        height: 115px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .skills-image {
+        width: 120px;
+        height: 105px;
+    }
+    .skills-name {
+        font-size: 16px;
+    }
+    .certificates-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    .skills-image {
+        width: 100px;
+        height: 90px;
+    }
+    .skills-name {
+        font-size: 14px;
+    }
+    
+}

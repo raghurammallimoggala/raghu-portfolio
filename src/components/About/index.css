@@ -1,0 +1,67 @@
+
+.about{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    align-items: center;
+    padding: 40px 20px;
+}
+.light {
+  background:linear-gradient(135deg, #220dda,#d684a4);
+  color:#000;
+}
+
+.dark {
+  background: linear-gradient(135deg, #0f2027,#203a43, #2c5364);
+  color:#fff;
+}
+
+.about-title{
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.about-description,
+.about-background,
+.abouthobbies{
+font-size: 20px;
+font-family: "Roboto", sans-serif;
+font-weight: 800;
+text-align: center;
+line-height: 1.7;
+} 
+
+@media screen and (max-width:1024px){
+    .about-title{
+        font-size: 28px;
+    }
+
+    .about-description,
+    .about-background,
+    .abouthobbies{
+    font-size: 18px;
+    max-width: 650px;
+}
+
+}
+
+@media screen and (max-width:768px){ 
+    .about-title{
+        font-size: 22px;
+        margin-top: 60px;
+    }
+
+    .about-description,
+    .about-background,
+    .abouthobbies{
+    font-size: 15px;
+    margin: 10px 15px;
+    line-height: 1.5;
+}
+
+}
+    

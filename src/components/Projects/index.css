@@ -1,0 +1,142 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient(to left, #220dda, #d684a4);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.project-card {
+  flex: 0 0 260px;
+  min-height: 220px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-list-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+}
+
+.project-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+.projects.light {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.projects.dark {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.card-light {
+  background-color: #db126d;
+  color:#fff 
+}
+
+.card-dark {
+  background-color: #1e3a8a; 
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .project-card{
+    flex:0 0 45%;
+    max-width: 45%;
+  }
+  .project-title{
+    font-size: 28px;
+  }
+  .project-description{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-card{
+    flex:0 0 90%;
+    max-width: 90%;
+    padding: 15px;
+    margin-right: 80px;
+  }
+
+  .project-title{
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .project-description{
+    font-size: 13px;
+  }
+
+  .project-link{
+    font-size: 14px;
+  }
+}

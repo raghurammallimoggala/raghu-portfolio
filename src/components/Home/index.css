@@ -1,0 +1,77 @@
+.home-container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.light {
+  background-image: linear-gradient(to left, #220dda, #d684a4);
+  color: #000000;
+}
+
+.dark {
+  background-image: linear-gradient(to left, #220dda, #d684a4);
+  color: #ffffff;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  object-fit: cover; 
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+  .title{
+    font-size: 26px;
+  }
+  .description{
+    font-size: 14px;
+  }
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  
+}
+
+.description {
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+    .title{
+      font-size: 30px;
+    }
+    .description{
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  .title{
+    font-size: 22px;
+  }
+  .description{
+    font-size: 12px;
+  }
+}
