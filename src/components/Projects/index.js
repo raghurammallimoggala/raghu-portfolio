@@ -7,21 +7,21 @@ function Projects(){
   const projectList = [
     {
       title: "User-Transaction",
-      description: "My personal portfolio built with React.js and React Router, Hooks.",
-      git: "https://github.com/raghurammallimoggala/user-transactio",
+      description: "User-Transaction built with frontend use React+Vite, tailwind CSS,react-icons, React Router, Hooks and backend use Node.js Express.js,Sqlite,JWT,bcrypt.",
+      git: "https://github.com/raghurammallimoggala/user-transaction",
       deploy:"https://user-transaction-ochre.vercel.app/"
 
     },
     {
       title: "CMS Project",
-      description: "A simple Content Management System with React frontend and Node.js backend.",
+      description: "A simple Content Management System with frontend use React+Vite, Tailwind CSS, Fetch API  and backend use Node.js Express.js Multer(file upload),Sqlite.",
       git: "https://github.com/raghurammallimoggala/cms-project",
       deploy:"https://cms-project-rouge.vercel.app/"
     },
     {
       title: "E-commerce App",
-      description: "Full stack e-commerce web app using React, Express, and MongoDB.",
-      git: "https://github.com/raghu/ecommerce",
+      description: "Full stack e-commerce-app web app using React,Redux Toolkit,JavaScript(ES6+),Tailwind CSS HTML5 CSS3",
+      git: "https://github.com/raghurammallimoggala/e-commerce-app",
       deploy:"https://e-commerce-app-eight-cyan.vercel.app/"
     }
   ];
